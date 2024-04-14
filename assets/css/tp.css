@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+:root{
+    --cor-principal: hsl(175deg, 97%, 57%);
+    --cor-secundaria: hsl(23, 100%, 50%);
+    --cor-auxiliar: hsla(0, 100%, 100%, 0.70);
+    --cor-marcado: hsl(23, 100%, 50%, 0.50);
+    --font-principal: "Sriracha", cursive;
+    --font-peso: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background: linear-gradient(to right, var(--cor-principal) 0%, var(--cor-secundaria) 40% 60%, var(--cor-principal) 100%);
+    font-size: 10px;
+}
+body{
+    background-color: var(--cor-auxiliar);
+    font-family: var(--font-principal);
+    font-weight: var(--font-peso);
+}
+header, main, footer{
+    width: 700px;
+    margin: auto;
+}
+/* cabeçalho e menu */
+header.top{
+    background-color: var(--cor-auxiliar);
+    height: 5rem;
+}
+nav.top__mp_tp{
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+nav img.mp_tp__logo{
+    width: 6rem;
+    display: flex;
+    margin-top: 1rem;
+}
+nav.top__mp_tp ul{
+    display: inline;
+}
+nav.top__mp_tp ul li{
+    list-style: none;
+    display: inline;
+    gap: 1rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+nav.top__mp_tp ul li:hover{
+    background-color: var(--cor-marcado);
+}
+nav.top__mp_tp ul li>a{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+nav.top__mp_tp ul li>a:hover{
+    color: var(--cor-principal);
+}
+/* main */
+main{
+    height: calc(100vh - 10rem);
+}
+/* rodape */
+footer.rodape{
+    font-size: 1.25rem;
+    background-color: var(--cor-auxiliar);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+footer.rodape ul li{
+    list-style: none;
+}
+footer.rodape .rodape__contatos{
+    justify-items: right;
+}
