@@ -8,6 +8,7 @@
     --cor-texto-marcado : hsla(0, 0, 0, 1);
     --font-principal: "Sriracha", cursive;
     --font-peso: 400;
+    --width-area: 80rem;
 }
 
 *{
@@ -27,7 +28,7 @@ body{
     font-weight: var(--font-peso);
 }
 header, main, footer{
-    width: 700px;
+    width: var(--width-area);
     margin: auto;
 }
 /* cabeçalho e menu */
@@ -82,6 +83,7 @@ main{
     background-position: center;
     background-attachment: fixed;
     background-color: var(--cor-auxiliar);
+    background-size: auto;
 }
 /* section */
 section[id]{
@@ -147,14 +149,16 @@ footer.rodape div.rodape__contatos{
     div.top__mp_tp{
         width: 400px;
     }
-    div.top__mp_tp ul{
+    /* div.top__mp_tp ul{
         display: none;
-    }
+    } */
     i[menu]{
         display: inline;
     }
     /* main */
-
+    main{
+        background-size: 400px;
+    }
     /* section */
     section{
         max-width: 400px;
@@ -163,6 +167,12 @@ footer.rodape div.rodape__contatos{
     footer.rodape{
         max-width: 400px;
         font-size: 1rem;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+    footer.rodape div.rodape__contatos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
     }
 }
