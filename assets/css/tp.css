@@ -110,6 +110,7 @@ footer.rodape{
     background-color: var(--cor-auxiliar-opaco);
     display: grid;
     grid-template-columns: 1fr 2fr;
+    color: var(--cor-secundaria);
 }
 footer.rodape ul li{
     list-style: none;
@@ -127,6 +128,9 @@ footer.rodape div.rodape__contatos{
     text-align: right;
     justify-content: space-around;
     align-items: center;
+}
+footer.rodape div.rodape__contatos a{
+    color: var(--cor-secundaria);
 }
 /* tools */
 .btn_voltar{
@@ -167,12 +171,5 @@ footer.rodape div.rodape__contatos{
     footer.rodape{
         max-width: 400px;
         font-size: 1rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr;
-    }
-    footer.rodape div.rodape__contatos{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        text-align: center;
     }
 }
