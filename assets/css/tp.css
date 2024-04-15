@@ -1,175 +1,175 @@
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
-:root{
-    --cor-principal: hsl(175deg, 97%, 57%);
-    --cor-secundaria: hsl(23, 100%, 50%);
-    --cor-auxiliar: hsla(0, 100%, 100%, 0.25);
-    --cor-auxiliar-opaco: hsla(0, 100%, 100%, 1);
-    --cor-marcado: hsl(23, 100%, 50%, 0.50);
-    --cor-texto-marcado : hsla(0, 0, 0, 1);
-    --font-principal: "Sriracha", cursive;
-    --font-peso: 400;
-    --width-area: 80rem;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+    :root{
+        --cor-principal: hsl(175deg, 97%, 57%);
+        --cor-secundaria: hsl(23, 100%, 50%);
+        --cor-auxiliar: hsla(0, 100%, 100%, 0.25);
+        --cor-auxiliar-opaco: hsla(0, 100%, 100%, 1);
+        --cor-marcado: hsl(23, 100%, 50%, 0.50);
+        --cor-texto-marcado : hsla(0, 0, 0, 1);
+        --font-principal: "Sriracha", cursive;
+        --font-peso: 400;
+        --width-area: 80rem;
+    }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-}
-html{
-    background: linear-gradient(to right, var(--cor-principal) 0%, var(--cor-secundaria) 40% 60%, var(--cor-principal) 100%);
-    font-size: 10px;
-}
-body{
-    background-color: var(--cor-auxiliar);
-    font-family: var(--font-principal);
-    font-weight: var(--font-peso);
-}
-header, main, footer{
-    width: var(--width-area);
-    margin: auto;
-}
-/* cabeçalho e menu */
-header.top{
-    height: 5rem;
-}
-div.top__mp_tp{
-    background-color: var(--cor-auxiliar-opaco);
-    width: inherit;
-    position: fixed;
-    z-index: 100;
-}
-nav.top__mp_tp{
-    width: inherit;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-nav img.mp_tp__logo{
-    width: 6rem;
-    display: flex;
-    margin-top: 1rem;
-}
-nav.top__mp_tp ul{
-    display: inline;
-}
-nav.top__mp_tp ul li{
-    list-style: none;
-    display: inline;
-    gap: 1rem;
-    font-size: 1.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-nav.top__mp_tp ul li:hover{
-    background-color: var(--cor-marcado);
-}
-nav.top__mp_tp ul li>a{
-    text-decoration: none;
-    color: var(--cor-secundaria);
-}
-nav.top__mp_tp ul li>a:hover{
-    color: var(--cor-texto-marcado);
-}
-i[menu]{
-    display: none;
-}
-/* main */
-main{
-    background-image: url("../img/l_tp.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: var(--cor-auxiliar);
-    background-size: auto;
-}
-/* section */
-section[id]{
-    height: calc(100vh - 17.8rem);
-    /* height: 100vh; */
-    padding-top: 5rem;
-}
-section h1, section h2{
-    font-size: 3rem;
-}
-hr.direta{
-    height: 0.35rem;
-    background: linear-gradient(to right, var(--cor-principal), var(--cor-secundaria));
-    border-style: none;
-}
-hr.esquerda{
-    height: 0.35rem;
-    background: linear-gradient(to left, var(--cor-principal), var(--cor-secundaria));
-    border-style: none;
-}
-/* rodape */
-footer.rodape{
-    font-size: 1.25rem;
-    background-color: var(--cor-auxiliar-opaco);
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    color: var(--cor-secundaria);
-}
-footer.rodape ul li{
-    list-style: none;
-}
-footer.rodape ul li>a{
-    text-decoration: none;
-    color: var(--cor-secundaria);
-}
-footer.rodape ul li>a:hover{
-    background-color: var(--cor-marcado);
-    color: var(--cor-texto-marcado);
-}
-footer.rodape div.rodape__contatos{
-    display: flex;
-    text-align: right;
-    justify-content: space-around;
-    align-items: center;
-}
-footer.rodape div.rodape__contatos a{
-    color: var(--cor-secundaria);
-}
-/* tools */
-.btn_voltar{
-    position: fixed;
-    font-size: 3rem;
-    right: 10rem;
-    bottom: 10rem;
-
-    transform: translateX(100%);
-    transition: 0.3s;
-}
-
-@media (max-width:550px ) {
-    /* inicial */
-    header, main, footer {
-        max-width: 400px;
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+    }
+    html{
+        background: linear-gradient(to right, var(--cor-principal) 0%, var(--cor-secundaria) 40% 60%, var(--cor-principal) 100%);
+        font-size: 10px;
+    }
+    body{
+        background-color: var(--cor-auxiliar);
+        font-family: var(--font-principal);
+        font-weight: var(--font-peso);
+    }
+    header, main, footer{
+        width: var(--width-area);
         margin: auto;
     }
-    /* header */
-    div.top__mp_tp{
-        width: 400px;
+    /* cabeçalho e menu */
+    header.top{
+        height: 5rem;
     }
-    /* div.top__mp_tp ul{
-        display: none;
-    } */
-    i[menu]{
+    div.top__mp_tp{
+        background-color: var(--cor-auxiliar-opaco);
+        width: inherit;
+        position: fixed;
+        z-index: 100;
+    }
+    nav.top__mp_tp{
+        width: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    nav img.mp_tp__logo{
+        width: 6rem;
+        display: flex;
+        margin-top: 1rem;
+    }
+    nav.top__mp_tp ul{
         display: inline;
+    }
+    nav.top__mp_tp ul li{
+        list-style: none;
+        display: inline;
+        gap: 1rem;
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    nav.top__mp_tp ul li:hover{
+        background-color: var(--cor-marcado);
+    }
+    nav.top__mp_tp ul li>a{
+        text-decoration: none;
+        color: var(--cor-secundaria);
+    }
+    nav.top__mp_tp ul li>a:hover{
+        color: var(--cor-texto-marcado);
+    }
+    i[menu]{
+        display: none;
     }
     /* main */
     main{
-        background-size: 400px;
+        background-image: url("../img/l_tp.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-color: var(--cor-auxiliar);
+        background-size: auto;
     }
     /* section */
-    section{
-        max-width: 400px;
+    section[id]{
+        height: calc(100vh - 17.8rem);
+        /* height: 100vh; */
+        padding-top: 5rem;
     }
-    /* footer */
+    section h1, section h2{
+        font-size: 3rem;
+    }
+    hr.direta{
+        height: 0.35rem;
+        background: linear-gradient(to right, var(--cor-principal), var(--cor-secundaria));
+        border-style: none;
+    }
+    hr.esquerda{
+        height: 0.35rem;
+        background: linear-gradient(to left, var(--cor-principal), var(--cor-secundaria));
+        border-style: none;
+    }
+    /* rodape */
     footer.rodape{
-        max-width: 400px;
-        font-size: 1rem;
+        font-size: 1.25rem;
+        background-color: var(--cor-auxiliar-opaco);
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        color: var(--cor-secundaria);
     }
-}
+    footer.rodape ul li{
+        list-style: none;
+    }
+    footer.rodape ul li>a{
+        text-decoration: none;
+        color: var(--cor-secundaria);
+    }
+    footer.rodape ul li>a:hover{
+        background-color: var(--cor-marcado);
+        color: var(--cor-texto-marcado);
+    }
+    footer.rodape div.rodape__contatos{
+        display: flex;
+        text-align: right;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer.rodape div.rodape__contatos a{
+        color: var(--cor-secundaria);
+    }
+    /* tools */
+    .btn_voltar{
+        position: fixed;
+        font-size: 3rem;
+        right: 10rem;
+        bottom: 10rem;
+
+        transform: translateX(100%);
+        transition: 0.3s;
+    }
+
+    @media (max-width:550px ) {
+        /* inicial */
+        header, main, footer {
+            max-width: 400px;
+            margin: auto;
+        }
+        /* header */
+        div.top__mp_tp{
+            width: 400px;
+        }
+        /* div.top__mp_tp ul{
+            display: none;
+        } */
+        i[menu]{
+            display: inline;
+        }
+        /* main */
+        main{
+            background-size: 400px;
+        }
+        /* section */
+        section{
+            max-width: 400px;
+        }
+        /* footer */
+        footer.rodape{
+            max-width: 400px;
+            font-size: 1rem;
+        }
+    }
