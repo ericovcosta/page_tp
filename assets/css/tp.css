@@ -200,7 +200,9 @@ i{
 .hide{
     display: none;
 }
-
+.ativa{
+    
+}
 @media (max-width:550px ) {
     /* inicial */
     header, main, footer {
