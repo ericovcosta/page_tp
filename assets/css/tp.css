@@ -122,19 +122,15 @@ section h1, section h2{
 }
 hr.direta{
     height: 0.35rem;
-    background: linear-gradient(to right, var(--cor-principal), var(--cor-secundaria));
+    background: linear-gradient(to right, var(--cor-principal) 0%, var(--cor-secundaria) 65%);
     border-style: none;
 }
 hr.esquerda{
     height: 0.35rem;
-    background: linear-gradient(to left, var(--cor-principal), var(--cor-secundaria));
+    background: linear-gradient(to left, var(--cor-principal) 0%, var(--cor-secundaria) 65%);
     border-style: none;
 }
 /* rodape */
-/* footer{
-    position: sticky;
-    bottom: 0;
-} */
 footer{
     height: 15rem;
 }
@@ -200,8 +196,12 @@ i{
 .hide{
     display: none;
 }
-.ativa{
-    
+li a.ativa{
+    border-bottom: 0.25rem;
+    padding-bottom: 1rem;
+    border-bottom-color: var(--cor-secundaria);
+    border-bottom-style: solid;
+    transition: all cubic-bezier(0.895, 0.03, 0.685, 0.22) 1s;
 }
 @media (max-width:550px ) {
     /* inicial */

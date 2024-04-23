@@ -20,7 +20,6 @@ const mostra_back2home = () => {
 }
 
 const sessoes = document.querySelectorAll('main section')
-console.log(sessoes);
 
 const marcaMenuAtivo = () => {
     const pontoCheck = window.scrollY;
@@ -29,19 +28,14 @@ const marcaMenuAtivo = () => {
         const sessaoTop = sessao.offsetTop;
         const sessaoHeigth = sessao.offsetHeight;
         const sessaoID = sessao.getAttribute('id');
-        console.log(sessaoID);
 
         const checkInicio =  pontoCheck >= sessaoTop;
         const checkFim = pontoCheck <= sessaoTop + sessaoHeigth;
-
+        const sessaoAtiva = document.querySelector(`nav ul li a[href*=${sessaoID}]`);
         if(checkInicio && checkFim){
-            document
-                .querySelector(`nav ul li a[href*=${sessaoID}]`)
-                .classList.add('ativa');
+            sessaoAtiva.classList.add('ativa');
         } else {
-            document
-                .querySelector(`nav ul li a[href*=${sessaoID}]`)
-                .classList.remove('ativa');
+            sessaoAtiva.classList.remove('ativa');
         }
     });
 }
