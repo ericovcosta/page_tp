@@ -120,6 +120,13 @@ section[id]{
 section h1, section h2{
     font-size: 3rem;
 }
+#como-chegar{
+    height: 40rem;
+}
+#como-chegar iframe{
+    height: 30rem;
+    width: var(--width-area);
+}
 hr.direta{
     height: 0.35rem;
     background: linear-gradient(to right, var(--cor-principal) 0%, var(--cor-secundaria) 65%);
